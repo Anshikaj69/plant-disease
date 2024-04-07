@@ -12,10 +12,5 @@
             "src":"/(.*)",
             "dest":"/"
         }
-    ],
-    "functions": {
-        "default": {
-          "runtime": "nodejs18.x"
-        }
-      }
+    ]
     }
