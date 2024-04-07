@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+rohits plant disease detection
+{% endblock pagetitle %}
+{% block body %}
+<body ></body>
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+
+
+<div class="row mb-5 text-decoration text-white laptop">
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px;padding-top: 10%;padding-bottom: 0px;">
+        <h1 class="display-4" style="font-weight: 400;color: rgb(255, 255, 255);"><b>PlantGuardian
+               </b></h1>
+               <h3 > Protecting Crops, Preserving Harvests</h3>
+               <h5> Secure your plant health by detecting potential diseases at the earliest stages.</h5>
+        
+    </div>
+</div>
+
+<center >
+    <a href="/index">
+    <button style=" border-radius: 10px; background-color: rgb(1, 45, 45); padding: 18px; color: white ; border: 0;font-weight:600; font-size: larger;"><b >Click To Predict</b></button>
+</a>
+</center>
+
+
+
+
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "Z4oPIGMRgse9DhbaADuSa",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="Z4oPIGMRgse9DhbaADuSa"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+
+{% endblock body %}
