@@ -1,6 +1,10 @@
 import os
-from flask import Flask, redirect, render_template, request
-from PIL import Image
+from flask import Flask, redirect, render_template,request
+try:
+    import PIL
+    from PIL import Image
+except ImportError as e:
+    print(e)
 import torchvision.transforms.functional as TF
 import CNN
 import numpy as np
